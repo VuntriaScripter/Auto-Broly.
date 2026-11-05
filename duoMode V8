@@ -1,1 +1,380 @@
 
+
+pcall(function()
+    for _,v in game:GetService("CoreGui").RobloxPromptGui.promptOverlay:GetChildren() do
+        if v.Name == "ErrorPrompt" and v:FindFirstChild("MessageArea") and v.MessageArea:FindFirstChild("ErrorFrame") then
+            task.wait(2)
+
+            for _ = 1, 30 do
+                game:GetService("TeleportService"):Teleport(536102540, Player)
+                task.wait(2)
+            end
+        end
+    end
+
+    game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
+        if child.Name == "ErrorPrompt" and child:FindFirstChild("MessageArea") and child.MessageArea:FindFirstChild("ErrorFrame") then
+            task.wait(2)
+
+            for _ = 1, 30 do
+                game:GetService("TeleportService"):Teleport(536102540, Player)
+                task.wait(2)
+            end
+        end
+    end)
+end)
+
+
+
+
+if not game:IsLoaded() then
+    local loadedcheck = Instance.new("Message", workspace)
+    loadedcheck.Text = "Loading..."
+    game.Loaded:Wait()
+    loadedcheck:Destroy()
+end
+
+    local track =
+        coroutine.create(
+        function()
+            Target = "broly br"
+            for i, w in pairs(game.Workspace.Live:GetChildren()) do
+                if string.match(string.lower(w.Name), string.lower(Target)) then
+                    _G.Track = true
+                    while _G.Track and game:GetService("RunService").Heartbeat:wait() do
+                        w:WaitForChild("HumanoidRootPart")
+                        for i, v in pairs(game.Workspace:GetChildren()) do
+                            if v:FindFirstChild("Ki") and v:FindFirstChild("Mesh") then
+                                v.CFrame = w.HumanoidRootPart.CFrame
+                            end
+                        end
+                        for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                            if v:FindFirstChild("Ki") and v:FindFirstChild("Mesh") then
+                                v.CFrame = w.HumanoidRootPart.CFrame
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    )
+
+    coroutine.resume(track)   
+    
+    local plr = game.Players.LocalPlayer
+game.Workspace:WaitForChild("Live")
+game.Workspace.Live:WaitForChild(plr.Name)
+game:GetService("RunService").RenderStepped:connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
+game:GetService("Players").LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = "NEXUS THE SCAMMER !!!!"
+end)
+
+game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD")
+wait()
+
+if game.Players.LocalPlayer.UserId == id1 then
+    local function AutoBroly()
+        pcall(
+            function()
+                local Earth = 536102540
+                local Queue = 3565304751
+                local Broly = 2050207304
+
+                if game.PlaceId == Earth then
+                    while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Queue then
+                    while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Broly then
+                    local plr = game.Players.LocalPlayer
+                    pcall(
+                        function()
+                            if plr.Character.Parent ~= game.Workspace.Live then
+                                wait(.5)
+                                game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                            end
+                        end
+                    )
+                    wait(1)
+                    game:GetService("RunService").RenderStepped:connect(
+                        function()
+                            for i, v in pairs(game.Workspace.Live:GetChildren()) do
+                                if v.Name == partner1 then
+                                    if game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput") then
+                                        game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput"):Destroy()
+                                    end
+                            for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Blaster Meteor" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                            end
+                                local tween =
+                                        game:GetService("TweenService"):Create(
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart,
+                                        TweenInfo.new(-1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+                                        {CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)}
+                                    )
+                                    tween:Play()
+                                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+                                    game.Workspace.CurrentCamera.CFrame =
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                                    wait(.2)
+                                    game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("bean")
+                                elseif not game.Workspace.Live:FindFirstChild(partner1) then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Players.LocalPlayer.Character.Humanoid.Health < 5 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Workspace.Live["Broly BR"].Humanoid.Health < 1 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                end
+                            end
+                        end
+                    )
+                    wait(720)
+                    game:GetService("TeleportService"):Teleport(Earth, LocalPlayer)
+                end
+            end
+        )
+    end
+
+    if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+        AutoBroly()
+    else
+        wait(2)
+        if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+            AutoBroly()
+        else
+            game:GetService("TeleportService"):Teleport(536102540, LocalPlayer)
+        end
+    end
+elseif game.Players.LocalPlayer.UserId == id2 then
+    local function AutoBroly()
+        pcall(
+            function()
+                local Earth = 536102540
+                local Queue = 3565304751
+                local Broly = 2050207304
+
+                if game.PlaceId == Earth then
+                    while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Queue then
+                     while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Broly then
+                    local plr = game.Players.LocalPlayer
+                    pcall(
+                        function()
+                            if plr.Character.Parent ~= game.Workspace.Live then
+                                wait(.5)
+                                game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                            end
+                        end
+                    )
+                    wait(1)
+                    game:GetService("RunService").RenderStepped:connect(
+                        function()
+                            for i, v in pairs(game.Workspace.Live:GetChildren()) do
+                                if v.Name == partner1 then
+                                    if game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput") then
+                                        game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput"):Destroy()
+                                    end
+                                    local tween =
+                                        game:GetService("TweenService"):Create(
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart,
+                                        TweenInfo.new(-1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+                                        {CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)}
+                                    )
+                                    tween:Play()
+                                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+                                    game.Workspace.CurrentCamera.CFrame =
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                                    wait(.2)
+                                    game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("bean")
+                                elseif not game.Workspace.Live:FindFirstChild(partner1) then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Players.LocalPlayer.Character.Humanoid.Health < 5 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Workspace.Live["Broly BR"].Humanoid.Health < 1 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                end
+                            end
+                        end
+                    )
+                    wait(720)
+                    game:GetService("TeleportService"):Teleport(Earth, LocalPlayer)
+                end
+            end
+        )
+    end
+
+    if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+        AutoBroly()
+    else
+        wait(2)
+        if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+            AutoBroly()
+        else
+            game:GetService("TeleportService"):Teleport(536102540, LocalPlayer)
+        end
+    end
+elseif game.Players.LocalPlayer.UserId == id3 then
+    local function AutoBroly()
+        pcall(
+            function()
+                local Earth = 536102540
+                local Queue = 3565304751
+                local Broly = 2050207304
+
+                if game.PlaceId == Earth then
+                    while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Queue then
+                    while wait(2) do
+                        for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Instant Transmission" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                        end
+                    end
+                elseif game.PlaceId == Broly then
+                    local plr = game.Players.LocalPlayer
+                    pcall(
+                        function()
+                            if plr.Character.Parent ~= game.Workspace.Live then
+                                wait(.5)
+                                game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                            end
+                        end
+                    )
+                    wait(1)
+                    game:GetService("RunService").RenderStepped:connect(
+                        function()
+                            for i, v in pairs(game.Workspace.Live:GetChildren()) do
+                                if v.Name == partner1 then
+                                    if game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput") then
+                                        game.Players.LocalPlayer.Character:FindFirstChild("PowerOutput"):Destroy()
+                                    end
+                                for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v.Name == "Blaster Meteor" then
+                                v.Parent = game.Players.LocalPlayer.Character
+                                v:Activate()
+                                v:Deactivate()
+                                game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer(partner1)
+                                wait(0.2)
+                                v.Parent = game.Players.LocalPlayer.Backpack
+                            end
+                            end
+                                    local tween =
+                                        game:GetService("TweenService"):Create(
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart,
+                                        TweenInfo.new(-1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+                                        {CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0, 0, 15)}
+                                    )
+                                    tween:Play()
+                                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+                                    game.Workspace.CurrentCamera.CFrame =
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                                    wait(.2)
+                                    game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer("bean")
+                                elseif not game.Workspace.Live:FindFirstChild(partner1) then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Players.LocalPlayer.Character.Humanoid.Health < 5 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                elseif game.Workspace.Live["Broly BR"].Humanoid.Health < 1 then
+                                    wait(.25)
+                                    game:GetService("TeleportService"):Teleport(Queue, LocalPlayer)
+                                end
+                            end
+                        end
+                    )
+                    wait(720)
+                    game:GetService("TeleportService"):Teleport(Earth, LocalPlayer)
+                end
+            end
+        )
+    end
+
+    if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+        AutoBroly()
+    else
+        wait(2)
+        if game.Players.LocalPlayer.Character:FindFirstChild("Ki") then
+            AutoBroly()
+        else
+            game:GetService("TeleportService"):Teleport(536102540, LocalPlayer)
+        end
+    end
+end
